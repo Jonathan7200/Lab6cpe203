@@ -1,3 +1,5 @@
+package pt2.comparator;
+
 import java.util.Objects;
 
 final class Song

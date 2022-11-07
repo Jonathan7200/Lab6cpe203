@@ -1,11 +1,10 @@
+package pt2.comparator;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import java.util.Comparator;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 import org.junit.Test;
 import org.junit.Before;
@@ -26,6 +25,15 @@ public class TestCases
    @Test
    public void testArtistComparator()
    {
+      List<Song> expected = new ArrayList<>();
+      expected.add(new Song())
+      Comparator<Song> compare_artist = new ArtistComparator();
+
+      List<Song> songs_list = new ArrayList<>(Arrays.asList(songs));
+      Collections.sort(songs_list, compare_artist);
+
+
+
    }
 
    @Test
