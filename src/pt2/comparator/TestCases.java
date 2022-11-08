@@ -96,6 +96,11 @@ public class TestCases
    {
       Comparator<Song> compare_then = Comparator.comparing(Song::getTitle).thenComparing(Song::getArtist);
 
+      assertTrue(compare_then.compare(songs[3], songs[5]) > 0);
+      assertTrue(compare_then.compare(songs[5], songs[3]) < 0);
+      assertTrue(compare_then.compare(songs[3], songs[7]) == 0);
+
+
 
 
    }
